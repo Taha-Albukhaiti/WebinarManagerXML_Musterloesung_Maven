@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="100.0" prefWidth="300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thluebeck.webinar.view.WebinarLoeschenAbfrageController">
+   <children>
+      <Label layoutX="32.0" layoutY="14.0" prefHeight="17.0" prefWidth="203.0" text="Selektiertes Webinar wirklich löschen?" AnchorPane.leftAnchor="49.0" AnchorPane.topAnchor="20.0" />
+    <Button layoutX="56.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleJa" prefHeight="25.0" prefWidth="80.0" text="Ja" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="60.0" />
+      <Button layoutX="144.0" layoutY="50.0" mnemonicParsing="false" onAction="#handleNein" prefHeight="25.0" prefWidth="80.0" text="Nein" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="60.0" />
+   </children>
+</AnchorPane>

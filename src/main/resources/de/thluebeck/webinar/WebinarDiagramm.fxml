@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="450.0" prefWidth="620.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thluebeck.webinar.view.WebinarDiagrammController">
+   <children>
+      <BarChart fx:id="barChart" layoutX="106.0" layoutY="25.0" prefHeight="450.0" prefWidth="620.0" title="Anzahl Buchungen pro Webinar" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <xAxis>
+          <CategoryAxis label="Webinar-Nummer" side="BOTTOM" fx:id="xAxis" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis label="Anzahl Buchungen" side="LEFT" upperBound="50.0" />
+        </yAxis>
+      </BarChart>
+   </children>
+</AnchorPane>

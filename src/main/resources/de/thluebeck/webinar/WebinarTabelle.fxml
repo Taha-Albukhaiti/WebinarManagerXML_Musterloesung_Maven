@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+
+<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.thluebeck.webinar.view.WebinarTabelleController">
+   <center>
+      <AnchorPane prefHeight="300.0" prefWidth="600.0">
+         <children>
+            <TableView fx:id="webinarTable" layoutX="141.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <columns>
+                <TableColumn fx:id="nummerColumn" maxWidth="62.0" minWidth="62.0" prefWidth="62.0" text="Nummer" />
+                <TableColumn fx:id="themaColumn" minWidth="100.0" prefWidth="200.0" text="Thema" />
+                  <TableColumn fx:id="urlColumn" minWidth="100.0" prefWidth="200.0" text="URL" />
+                  <TableColumn fx:id="festpreisColumn" maxWidth="80.0" minWidth="80.0" style="-fx-alignment: CENTER-RIGHT;" text="Festpreis in €" />
+                  <TableColumn fx:id="anzahlBuchungenColumn" maxWidth="80.0" minWidth="80.0" style="-fx-alignment: CENTER-RIGHT;" text="Buchungen" />
+              </columns>
+               <columnResizePolicy>
+                  <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+               </columnResizePolicy>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </center>
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Datei">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleLaden" text="Webinare laden...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="L" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleGefiltertLaden" text="Webinare gefiltert laden..." />
+                  <MenuItem mnemonicParsing="false" onAction="#handleSpeichern" text="Webinare speichern...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="S" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleBeenden" text="Beenden">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Bearbeiten">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleNeuesWebinar" text="Neues Webinar...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="N" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleEditieren" text="Selektiertes Webinar editieren...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="E" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+                  <MenuItem mnemonicParsing="false" onAction="#handleLoeschen" text="Selektiertes Webinar löschen...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="D" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Extras">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#handleBuchungsuebersicht" text="Buchungsübersicht...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="B" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              <MenuItem mnemonicParsing="false" onAction="#handleUeber" text="Über...">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="I" control="DOWN" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator></MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+</BorderPane>

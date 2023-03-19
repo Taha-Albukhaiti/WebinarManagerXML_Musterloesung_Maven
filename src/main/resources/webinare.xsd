@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="webinare" type="webinareTyp">
+		<xs:key name="nummerKey">							<!-- Webinarnummern müssen eindeutig sein -->
+			<xs:selector xpath="*"/>
+			<xs:field xpath="@nummer"></xs:field>
+		</xs:key>
+	</xs:element>
+	<xs:complexType name="webinareTyp">
+		<xs:sequence>
+			<xs:element name="webinar" minOccurs="0" maxOccurs="unbounded">
+				<xs:complexType>
+					<xs:sequence>
+						<xs:element name="thema" type="xs:string"/>
+						<xs:element name="anzahlBuchungen" type="xs:positiveInteger"/>
+						<xs:element name="url" type="xs:string"/>
+						<xs:element name="kennwort" type="xs:string"/>
+						<xs:element name="festpreis" type="xs:positiveInteger"/>
+					</xs:sequence>
+					<xs:attribute name="nummer" type="xs:positiveInteger" use="required"/>
+				</xs:complexType>
+			</xs:element>
+		</xs:sequence>
+	</xs:complexType>
+</xs:schema>
