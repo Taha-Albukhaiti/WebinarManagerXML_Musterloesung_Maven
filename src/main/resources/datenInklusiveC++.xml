@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<webinare>
+    <webinar nummer="123">
+        <thema>Datenbanken</thema>
+        <anzahlBuchungen>7</anzahlBuchungen>
+        <url>https://mywebinar.de/123</url>
+        <kennwort>f74bw8</kennwort>
+        <festpreis>99</festpreis>
+    </webinar>
+    <webinar nummer="234">
+        <thema>Projektmanagement</thema>
+        <anzahlBuchungen>17</anzahlBuchungen>
+        <url>https://webinarsdeluxe.de/pm</url>
+        <kennwort>4fu3bqzt</kennwort>
+        <festpreis>129</festpreis>
+    </webinar>
+    <webinar nummer="245">
+        <thema>Stricken</thema>
+        <anzahlBuchungen>12</anzahlBuchungen>
+        <url>https://galorewebinars.com/245</url>
+        <kennwort>bi5w8n</kennwort>
+        <festpreis>59</festpreis>
+    </webinar>
+    <webinar nummer="266">
+        <thema>Programmieren</thema>
+        <anzahlBuchungen>22</anzahlBuchungen>
+        <url>https://webinarsdeluxe.de/prog</url>
+        <kennwort>tnsuvnr</kennwort>
+        <festpreis>149</festpreis>
+    </webinar>
+    <webinar nummer="346">
+        <thema>Social Distancing</thema>
+        <anzahlBuchungen>4</anzahlBuchungen>
+        <url>https://coronawebinars.com/346</url>
+        <kennwort>bi5w8n</kennwort>
+        <festpreis>59</festpreis>
+    </webinar>
+    <webinar nummer="100">
+        <thema>C++</thema>
+        <anzahlBuchungen>22</anzahlBuchungen>
+        <url>www.cplusplus.com</url>
+        <kennwort>1111</kennwort>
+        <festpreis>12</festpreis>
+    </webinar>
+</webinare>
