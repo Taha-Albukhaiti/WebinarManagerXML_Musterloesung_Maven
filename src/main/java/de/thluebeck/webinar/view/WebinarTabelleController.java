@@ -58,7 +58,7 @@ public class WebinarTabelleController {
      */
     @FXML
     public void initialize() {
-    	//Die setCellValueFactories, die auf die Tabellenspalten gesetzt werden, werden verwendet 
+    	//Die setCellValueFactories, die auf die Tabellenspalten gesetzt werden, werden verwendet,
     	//um festzulegen, welches Attribut eines Webinar-Objekts in der jeweiligen Spalte angezeigt werden soll.
     	//cellData->getValue() liefert das Webinar-Objekt fuer eine bestimmte Zeile der TableView.
     	//Ueber dieses Objekt koennen dann die einzelnen Attribut-Properties abgefragt werden.
